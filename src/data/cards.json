@@ -1,0 +1,25 @@
+{
+   "cards": [
+      {
+         "title": "Web développement",
+         "icon": "fa-laptop-code",
+         "description": "Développement d'application web front et back",
+         "subtitle": "Language utilisés",
+         "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"]
+      },
+      {
+         "title": "Intégration électronique",
+         "icon": "fa-microchip",
+         "description": "Création de module élecrtonique avec micro-controleur",
+         "subtitle": "Compétences clés",
+         "skills": ["Arduino", "Raspberry", "Capteur", "Prototypage"]
+      },
+      {
+         "title": "DIY",
+         "icon": "fa-tools",
+         "description": "Prototypage et \nconception à la demande",
+         "subtitle": "Compétences clés",
+         "skills": ["Menuiserie", "Électricité", "Soudure", "Projets créatifs"]
+      }
+   ]
+}

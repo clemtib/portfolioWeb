@@ -1,0 +1,83 @@
+{
+   "projects": [
+      {
+         "title": "Booki",
+         "year": "2022",
+         "category": "Web",
+         "mission": "Projet d'étude frontend dans le cadre de ma formation chez OpenClassrooms. Le but etait d'intégrer l'HTML et le CSS grâce à une maquette Figma fourni",
+         "techno": "HTML, CSS",
+         "webUrl": "https://clemtib.github.io/Book/",
+         "background": "/images/projets//Dev/Booki/Booki_projet1.png"
+      },
+      {
+         "title": "Sophie Bluel Portfolio",
+         "year": "2023",
+         "category": "Web",
+         "mission": "Projet d'étude frontend dans le cadre de ma formation chez OpenClassrooms. Le but était d'intégrer des fonction JavaScript basique comme l'ajout de photo, la gestion des Tokens ou l'affichage dynamique d'objet ",
+         "techno": "HTML, CSS, JavaScript",
+         "webUrl": "https://example.com/project2",
+         "background": "images/projets/Dev/SophieBluel/SophieBluel_projet2.png"
+      },
+      {
+         "title": "Kasa",
+         "year": "2023",
+         "category": "Web",
+         "mission": "Projet d'étude frontend dans le cadre de ma formation chez OpenClassrooms. Le but était de créer une application React et de créer des composants réutilisable ",
+         "techno": "React, Node.js",
+         "webUrl": "https://example.com/project3",
+         "background": "images/projets/Dev/Kasa/Kasa_projet3.png"
+      },
+      {
+         "title": "Mon vieux grimoire",
+         "year": "2023",
+         "category": "Web",
+         "mission": "Projet d'étude backend dans le cadre de ma formation chez OpenClassrooms. Grâce au front qui était fourni, le but était de prendre en mains une base de données MongoDB ainsi que de créer une API",
+         "techno": "Node.js, Express",
+         "webUrl": "https://example.com/project3",
+         "background": "images/projets/Dev/Grimoir/Grimoir_projet4.png"
+      },
+      {
+         "title": "Projet Arduino",
+         "year": "2020",
+         "category": "Electronics",
+         "mission": "Création d'une énigme pour un éscape game avec des bombes et une mallete de controle.",
+         "techno": "Arduino",
+         "background": "images/projets/Elec/Bombe.jpg"
+      },
+      {
+         "title": "Module electronique",
+         "year": "2021",
+         "category": "Electronics",
+         "mission": "Boitié électronique pour le controle d'une salle d'éscape game avec laser, digicodes, gâche electrique, relays et capteurs",
+         "techno": "Arduino, Controlino",
+         "background": "images/projets/Elec/Module.jpg"
+      },
+      {
+         "title": "Jeux en bois",
+         "year": "2023",
+         "category": "DIY",
+         "mission": "Construction de différents activités en bois. Poteaux kolantha, chaises porteuse, chars, poutres",
+         "techno": "Bois",
+         "webUrl": "https://example.com/project6",
+         "background": "images/projets/DIY/ConstruBois.jpg"
+      },
+      {
+         "title": "Decoupe Laser",
+         "year": "2023",
+         "category": "DIY",
+         "mission": "Conception illustrator d'un fichier vectoriel pour une decoupe laser sur une plaque de PMMA 3mm ",
+         "techno": "Illustrator, Trotec",
+         "webUrl": "https://example.com/project7",
+         "background": "images/projets/DIY/Laser.jpg"
+      },
+      {
+         "title": "DIY Project 2",
+         "year": "2016",
+         "category": "DIY",
+         "mission": "Creation d'un porte manteau design",
+         "techno": "Bois",
+         "webUrl": "https://example.com/project7",
+         "background": "images/projets/DIY/PorteManteau.jpg"
+      }
+   ]
+}

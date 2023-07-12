@@ -1,0 +1,258 @@
+body {
+   overflow: auto;
+}
+
+body.overflow-hidden {
+   overflow: hidden;
+}
+
+.activity {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 3.75rem 0;
+   background-color: #ffffff;
+}
+
+.activity-title {
+   margin-bottom: 3rem;
+}
+
+/* Filtre button */
+.filter-buttons {
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+   border: solid black 1px;
+   border-radius: 25px;
+}
+
+.filter-buttons button {
+   background-color: white;
+   color: rgb(4, 4, 67);
+   border: none;
+   padding: 8px 30px;
+   font-size: 20px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: color 0.3s;
+   border-radius: 20px;
+}
+
+.filter-buttons::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   transition: transform 0.3s;
+   transform-origin: left;
+}
+
+.filter-buttons button.active {
+   transition: transform 0.3s;
+   transform-origin: left;
+   color: white;
+   background-color: rgb(4, 4, 67);
+}
+
+/* Card projet */
+.projet-container {
+   margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.card-projet {
+   width: 40%;
+   height: 500px;
+   /* border: solid black 1px; */
+   box-shadow: 0 0 5px #a3a3aa;
+   border-radius: 15px;
+   margin: 10px;
+   background-color: #f1f1f1;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.card-projet img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: 1;
+   transition: opacity 0.3s;
+}
+
+.card-projet .display {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   opacity: 0;
+   transition: opacity 0.3s;
+}
+
+.card-projet:hover {
+   background-color: rgb(4, 4, 67);
+   color: #ffffff;
+}
+
+.card-projet:hover img {
+   opacity: 0.1;
+}
+
+.card-projet:hover .display {
+   display: flex;
+   opacity: 1;
+}
+
+.card-projet .display .projet-title {
+   margin-bottom: 10px;
+   font-size: 2em;
+   font-weight: bold;
+}
+
+.card-projet .display .savoirPlus {
+   position: absolute;
+   bottom: 10px;
+   right: 30px;
+   font-size: 1.3em;
+   color: white;
+}
+
+/* --------- */
+.modal-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 999;
+}
+
+.modal {
+   margin: 20px;
+   background-color: #fff;
+   padding: 20px;
+   min-width: 70%;
+   max-height: 70%;
+   overflow-y: auto;
+   border-radius: 4px;
+   position: relative;
+}
+
+.close-button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 24px;
+   border: none;
+   background: transparent;
+   cursor: pointer;
+}
+
+.modal-content {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.modal-content img {
+   max-width: 70%;
+   max-height: 800px;
+   box-shadow: 0 0 8px #a3a3aa;
+   border-radius: 10px;
+   object-fit: contain;
+}
+
+.modal-pres {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.modal-info {
+   width: 30%;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.modal-info h2 {
+   color: #222288;
+   font-size: 2em;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.modal-info span {
+   color: #7c7c7c;
+}
+
+.modal-info a {
+   cursor: pointer;
+   text-align: center;
+   color: #f1f1f1;
+   background-color: #222288;
+   padding: 18px 16px;
+   margin-top: 30px;
+}
+
+@keyframes heartbeat {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.1);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+.beat-animation {
+   animation-name: heartbeat;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+   .projet-container {
+      flex-direction: column;
+   }
+   .card-projet {
+      width: 100%;
+      height: 55vw;
+      margin: 10px 0;
+   }
+   .filter-buttons button {
+      padding: 8px 15px;
+   }
+   .modal-pres {
+      flex-direction: column;
+   }
+   .modal-content img {
+      max-width: 100%;
+   }
+   .modal-info {
+      width: auto;
+   }
+   .modal-info h2 {
+      margin: 10px 0;
+   }
+}

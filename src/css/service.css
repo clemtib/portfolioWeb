@@ -1,0 +1,45 @@
+.service {
+   padding: 3.75rem 0;
+   position: relative;
+   background-color: #e3c4a7;
+}
+
+.service-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.service-container h3 {
+   margin-bottom: 40px;
+}
+.cards-container {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   max-width: 1500px;
+}
+
+.cv-button {
+   margin-top: 50px;
+}
+.cv-button a {
+   font-size: x-large;
+   background-color: rgb(255, 255, 255);
+   padding: 10px 20px;
+   border-radius: 30px;
+}
+
+.cv-button a:hover {
+   background-color: rgb(4, 4, 67);
+   color: white;
+}
+
+@media (max-width: 768px) {
+   .cards-container {
+      flex-direction: column;
+   }
+   .service-container {
+      padding: 0 10px;
+   }
+}

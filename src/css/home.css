@@ -1,0 +1,132 @@
+.home {
+   /* position: relative; */
+   /* background-color: rgb(4, 4, 67); */
+   background: linear-gradient(rgb(4, 4, 67), rgb(129, 73, 0));
+   height: calc(var(--vh, 1vh) * 100);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   z-index: 1;
+}
+
+.firstPage {
+   margin-top: 50px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+
+   opacity: 0;
+   animation: fadeIn 1s ease-in-out forwards;
+   z-index: 2;
+}
+
+.firstPage.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.title,
+.portrait {
+   font-size: 3vw;
+   color: aliceblue;
+}
+
+.portrait img {
+   max-width: 400px;
+   border-radius: 200px;
+   z-index: 2;
+}
+
+.scroll {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: aliceblue;
+   font-size: 1.2em;
+   cursor: pointer;
+
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+.scroll.visible {
+   opacity: 1;
+}
+
+.scroll:hover .fa-chevron-down {
+   animation: arrowAnimation 1s infinite;
+}
+
+.white-dot {
+   position: absolute;
+   background-color: rgba(249, 255, 206, 0.679);
+   border-radius: 50%;
+   /* transition: opacity 3.5s; */
+   /* animation: fadeIn 4.5s ease-in-out; Animation "fade in" */
+   animation: fadeOut 8s ease-in-out; /* Animation "fade out" */
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+      transform: translateY(-30px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+@keyframes fadeOut {
+   100% {
+      opacity: 0;
+      transform: translateY(0);
+   }
+   25% {
+      opacity: 1;
+   }
+   0% {
+      opacity: 0;
+      transform: translateY(100px);
+   }
+}
+@keyframes arrowAnimation {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@media (max-width: 768px) {
+   .firstPage {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+   .title,
+   .portrait {
+      margin-top: 50px;
+      font-size: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+   .portrait img {
+      width: 70%;
+      border-radius: 200px;
+   }
+   .scroll {
+      font-size: 4vw;
+   }
+}
